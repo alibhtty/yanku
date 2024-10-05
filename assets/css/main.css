@@ -2169,7 +2169,7 @@ footer .footer-left {
   height: auto;
   display: block;
   background-color: var(--light-amarillo); /* d5dddb */
-  padding: 40px 50px;
+  padding: 60px 50px; /* 40px 50px */
 }
 footer .footer-left .footer-logo {
   width: 100%;
@@ -2360,7 +2360,7 @@ footer .copy-block {
   color: #fff;
   padding: 26px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -3201,7 +3201,6 @@ footer .social-icon a.googleplus-icon:hover {
   }
   footer .copy-block {
     padding: 25px 18px;
-    font-size: 12px;
   }
   .blog .content-area .block1 .block1-left {
     top: 0;
@@ -4352,4 +4351,12 @@ strong{
 b{
     color: #7a1c5e;
     font-size: 11px;
+}
+
+.copy-block a{
+  color: #adff0a;
+  font-weight: 600;
+}
+.alibhtty:hover{
+  color: #f1f1f1;
 }
