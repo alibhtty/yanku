@@ -5,7 +5,7 @@
   --magenta: #FF00FF;
   --amarillo: #FFFF00; /* FFBB00 */
   --azul: #0000FF;
-  --bg-light: #FFF0F8;
+  --bg-light: #fff6f0; /* FFF0F8 */
   --blanco:#FFFFFF;
   --light-amarillo: #FFFFE0;
 
@@ -269,6 +269,7 @@ input[type="password"],
 input[type="email"],
 textarea {
   -webkit-appearance: none;
+  appearance:none;
 }
 .ipad input[type="radio"],
 .iphone input[type="radio"],
@@ -294,7 +295,7 @@ a {
   color: #000;
 }
 .menubar:hover {
-  color: #ffff00 !important;
+  color: #793200 !important;
   text-decoration: none !important;
 }
 a:hover {
