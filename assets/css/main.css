@@ -1,4 +1,4 @@
-/* @charset "utf-8"; */
+@charset "utf-8";
 
 :root {
   --magenta-logo:#C5945E; /* #E6037E */
@@ -414,7 +414,8 @@ a.right-side.light:hover {
   width: 45px;
   height: 2px;
   background-color: #fff;
-  margin: 0 0 10px 0;
+  /* margin: 0 0 10px 0; */
+  margin: 0;
   display: block;
 }
 .menuSeven.light span {
@@ -714,7 +715,7 @@ h1 {
   position: absolute;
   -webkit-transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-  height: 2px;
+  height: 3px;
 }
 .menuSeven span:nth-child(1) {
   top: 0;
@@ -821,7 +822,17 @@ h1 {
   text-transform: uppercase;
   -webkit-transition: all ease-out 0.2s;
   transition: all ease-out 0.2s;
-  padding: 0 40px;
+  padding: .3em 1.5em; /* 0 40px */
+}
+.img-sub-nav{
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+}
+.img-sub-nav img{
+  display: flex;
+  width: 50%;
+  margin: 1em;
 }
 .mobile_menu-nav-list-item:first-child .mobile_menu-nav-link {
   padding-top: 0;
@@ -995,7 +1006,7 @@ h1 {
     opacity: 1;
   }
 }
-.our-banner {
+/* .our-banner {
   width: 100%;
   display: block;
   position: relative;
@@ -1003,7 +1014,7 @@ h1 {
     no-repeat center center;
   background-size: cover;
   height: 80vh;
-}
+} */
 .our-banner h1 {
   padding-top: 70px;
 }
@@ -1251,8 +1262,8 @@ h1 {
   display: block;
 }
 .content-area .block2:after {
-  background: url("https://www.quay.com.au/wp-content/themes/quay/images/bd-image.png")
-    no-repeat left;
+  /* background: url("https://www.quay.com.au/wp-content/themes/quay/images/bd-image.png")
+    no-repeat left; */
   position: absolute;
   content: "";
   bottom: 107px;
@@ -1582,9 +1593,9 @@ p.menu-price-ind {
   display: block;
 }
 .content-area .gallery-block .image1 {
-  background: url("https://www.quay.com.au/wp-content/themes/quay/images/gallery-image6.jpg")
+  /* background: url("https://www.quay.com.au/wp-content/themes/quay/images/gallery-image6.jpg")
     no-repeat left top;
-  background-size: cover !important;
+  background-size: cover !important; */
   width: 100%;
   min-height: 50vh;
   position: relative;
@@ -1754,9 +1765,9 @@ section.panel p a {
   filter: none;
 }
 .content-area .gallery-block .image4 {
-  background: url("https://www.quay.com.au/wp-content/themes/quay/images/gallery-image5.jpg?v=2")
+  /* background: url("https://www.quay.com.au/wp-content/themes/quay/images/gallery-image5.jpg?v=2")
     no-repeat left top;
-  background-size: cover;
+  background-size: cover; */
   width: 100%;
   min-height: 50vh;
   -webkit-filter: grayscale(100%);
@@ -2070,12 +2081,25 @@ p.quote-author {
     display: none;
   }
   .mobile_menu-nav-list {
-    margin-bottom: 60px;
-    margin-top: 80px;
+    height: 45vh;
+    margin-bottom: 4em; /* 60px */
+    margin-top: 4em; /* 80px */
   }
   .functions-image {
     min-height: 50vh;
   }
+  /* .mobile_menu-nav-list-item {
+    margin: 0;
+    padding: .3em 1em;
+  }
+  .img-sub-nav{
+    position: relative;
+    display: flex;
+  }
+  .img-sub-nav img{
+    width: 100%;
+    margin: 1em;
+  } */
 }
 .news-block {
   width: 100%;
@@ -2366,7 +2390,7 @@ footer .copy-block {
   letter-spacing: 4px;
 }
 footer .social-icon a {
-  background: url("https://www.quay.com.au/wp-content/themes/quay/images/spirit-icon.png")
+  background: url("../icons/social-icons.png")
     no-repeat 0 0;
   display: block;
   float: left;
@@ -3232,10 +3256,10 @@ footer .social-icon a.googleplus-icon:hover {
     height: auto !important;
   }
   .menuSeven {
-    height: 34px;
+    height: 2.5em; /* 3em 34px */
   }
   .menuSeven span:nth-child(2) {
-    top: 11px;
+    top: 1.1em; /* 11px */
     left: 0;
   }
   .content-area .latest-block .latest-left h2 {
@@ -3385,9 +3409,9 @@ footer .social-icon a.googleplus-icon:hover {
   .menu {
     width: 100%;
     float: none;
-    margin-top: 22px; /* 18px */
-    margin-left: 5px;
-    /* margin: 12px 0 0 5px; */
+    margin: 1.5em;
+    /* margin-top: 22px;
+    margin-left: 5px; */
   }
   /* .logo {
     margin-top: -3.20rem;
@@ -3397,7 +3421,7 @@ footer .social-icon a.googleplus-icon:hover {
     /* width: 100%; /
   } */
   .menu span {
-    width: 30px;
+    width: 3em; /* 30px */
   }
   header.active .logo-image {
     width: 20%;   /* 50% */
@@ -4174,7 +4198,7 @@ a.experienceVoucherButton:hover {
     color: #fff !important;
   }
   .home header .hamburger_menu_content {
-    padding-top: 70px;
+    padding-top: calc(70px + 1em); /* 70px */
   }
 }
 @media (min-width: 500px) {
