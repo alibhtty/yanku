@@ -16,6 +16,12 @@
   --swiper-theme-color: #007AFF;
 }
 
+img{
+  -user-drag: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+}
 img.wp-smiley,
 img.emoji {
     display: inline !important;
@@ -117,8 +123,8 @@ video {
 
 @media (orientation:portrait){
   .copy-block{
-    border-radius: 40px 40px 0 0;
-    height: 160px;
+    border-radius: 2em 2em 0 0;
+    height: 18em; /* 160px */
     font-size: 9px;
     cursor: default;
     background-color: #1a1a1a;
@@ -354,11 +360,31 @@ strong {
   position: relative;
 }
 .container {
-  width: 1170px;
+  /* width: 1170px; */
+  width: auto;
   height: auto;
   display: block;
   clear: both;
+  /* margin: 0 2em; */
 }
+@media (orientation:portrait){
+  .container{
+    margin: 3em 0;
+    margin-left: 1.5em;
+    padding: 0;
+  }
+}
+@media (orientation:landscape){
+  .container{
+    margin: 0 12em;
+    padding: 0;
+  }
+}
+/* .p-0 {
+  padding: 0 !important;
+  height: calc(50vh - 5.5em);
+} */
+
 header .left-side {
   width: auto;
   float: left;
@@ -534,6 +560,7 @@ header.active .showmenu span {
     background-color: rgb(197, 148, 94);
     /* background: linear-gradient(to right, var(--magenta-logo) 80%, transparent 90%); */
     background: rgb(197, 148, 94, .3);
+    backdrop-filter: blur(40px);
   }
 }
 @media (display-mode:standalone){
@@ -930,7 +957,7 @@ h1 {
   }
   .mobile_menu-nav-link {
     padding-top: 0.4rem;
-    padding-bottom: 0.6rem;
+    /* padding-bottom: 0.6rem; */
     /* font-size: 1.9rem; */
     color: var(--bg-light);
   }
@@ -1139,7 +1166,7 @@ h1 {
   text-align: center;
 }
 .content-area p {
-  margin-bottom: 8px !important;
+  margin-bottom: 1em !important; /* 8px */
 }
 .content-area .flickity-slider p {
   margin-bottom: 10px !important;
@@ -1155,7 +1182,7 @@ h1 {
   display: block;
   background-color: var(--bg-light);  /* #ebe9e6 */ /* #fffaee */
   position: relative;
-  height: calc(100vh - 70px); /* 100vh    menos header */
+  height: calc(100vh - 5.5em); /* 100vh    menos header */
 }
 .content-area p.menu-body {
   font-family: "OakesGroteskRegular", Arial, Helvetica, sans-serif;
@@ -1641,7 +1668,7 @@ p.menu-price-ind {
     no-repeat left top;
   background-size: cover !important; */
   width: 100%;
-  min-height: 50vh;
+  min-height: calc(50vh - 2.75em); /* 50vh */
   position: relative;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -1671,9 +1698,17 @@ ul {
   margin: 0;
 }
 .image1 {
+  background-size: cover;
+  height: calc(50vh - 2.75em);
   width: 33.33%;
   float: left;
   position: relative;
+}
+.image1 img{
+  background-size: cover;
+  background-image: no-repeat center center;
+  /* width: 100%; */
+  height: 100%;
 }
 .content_block {
   display: none;
@@ -2315,7 +2350,7 @@ footer .footer-left .location address {
   font-size: 14px;
   color: #1a1a1a;
   line-height: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 2em;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1px;
 }
@@ -2398,9 +2433,12 @@ footer .footer-left .location {
   display: block;
 }
 footer .footer-right {
-  width: 100%;
+  /* width: 100%; */
   display: block;
-  padding: 70px 50px 35px 50px;
+  padding: 8em;
+  height: 29em;
+  padding-top: 4em;
+  /* padding: 70px 50px 35px 50px; */
 }
 footer .footer-right h2 {
   font-size: 42px;
@@ -2608,10 +2646,10 @@ footer .social-icon a.googleplus-icon:hover {
   left: 0pt;
   /* background-color: #fff; */
   width: 100%;
-  padding: 10px;
+  padding: 1em;
   text-align: center;
-  height: 50px;
-  z-index: 999;
+  height: 8em; /* 50px */
+  z-index: 99;
 /*   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); */
 }
@@ -3455,7 +3493,7 @@ footer .social-icon a.googleplus-icon:hover {
     float: left;
   }
   footer .footer-right {
-    padding: 20px 20px;
+    padding: 3em 8em;
     min-height: 100%;
   }
   .menu {
@@ -4163,7 +4201,7 @@ input#quantity {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  padding: 115px 30px;
+  padding: 7em 3em; /* 115px */
 }
 .content-area .gallery-block .image1 .content-details {
   opacity: 1;
@@ -4378,8 +4416,8 @@ p, address, h1, h2, h3 {
   margin-left: 0px; */
   align-items: center;
   display: flex;
-  gap: 5em;
-  margin-bottom: 5em;
+  gap: 15vw; /* 5em */
+  margin-bottom: 8em;
   white-space: nowrap;
   justify-content: center;
 }
