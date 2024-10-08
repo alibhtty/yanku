@@ -300,8 +300,12 @@ p a:hover {
 a {
   color: #000;
 }
+.menubar{
+  transition: all .8s ease-in-out;
+  transition-duration: .6s;
+}
 .menubar:hover {
-  color: #793200 !important;
+  color: #f1f1f1 !important; /* 793200 */
   text-decoration: none !important;
 }
 a:hover {
@@ -894,7 +898,7 @@ h1 {
   font-size: 12px;
   font-weight: 400;
   color: rgb(241, 241, 241,.6);
-  margin-bottom: 9em;
+  margin-bottom: 2em;
 }
 .alibhtty{
   transition: .5s all ease-in-out;
