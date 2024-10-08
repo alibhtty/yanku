@@ -891,7 +891,7 @@ h1 {
   max-height: 12em;
   width: auto;
   /* margin: 1em; */
-  margin-bottom: 20vh;
+  /* margin-bottom: 20vh; */
 }
 .autor{
   font-family: "Poppins";
@@ -899,6 +899,22 @@ h1 {
   font-weight: 400;
   color: rgb(241, 241, 241,.6);
   margin-bottom: 2em;
+}
+@media (orientation:portrait){
+  .img-sub-nav img{
+    margin-bottom: 12em;
+  }
+  .autor{
+    margin-bottom: 7em;
+  }
+}
+@media (orientation:landscape), (display-mode:standalone){
+  .img-sub-nav img{
+    margin-bottom: 6em;
+  }
+  .autor{
+    margin-bottom: 2em;
+  }
 }
 .alibhtty{
   transition: .5s all ease-in-out;
