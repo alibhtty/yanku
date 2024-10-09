@@ -3791,9 +3791,9 @@ footer .social-icon a.googleplus-icon:hover {
   .content-details .read-btn {
     padding: 7px 20px;
   }
-  .footer-block .club-block {
+  /* .footer-block .club-block {
     padding: 20px 0;
-  }
+  } */
   .footer-block .club-block .left-club h2 {
     font-size: 22px;
     line-height: 35px;
@@ -4518,6 +4518,7 @@ p, address, h1, h2, h3 {
   .colaboradores-logo{
     width: 100%;
     gap: 2em;
+    margin-bottom: 4em;
   }
   .colaboraitem img{
     min-width: 100px;
@@ -4760,3 +4761,71 @@ iframe{
   filter: blur(3px);
 }
 /* end swipe */
+
+
+
+
+
+
+
+
+
+/* MAPA GOOGLE*/
+.nectar-google-map{
+  height: 700px;
+  margin: 0 3em;
+  border-radius: 1.5em;
+  margin-bottom: -.6em;
+  padding-top: 2em;
+  border: solid 4px var(--light-amarillo);
+}
+@media (orientation:portrait){
+  .nectar-google-map{
+    height: 50vh;
+    margin: 0 1.5em;
+    border-radius: 1.5em;
+    margin-bottom: -.6em;
+    padding-top: 2em;
+    border: solid 0px var(--light-amarillo);
+    padding-bottom: 5em;
+  }
+}
+.g-mapa{
+  padding-top: 5em;
+  background-color: var(--light-amarillo);
+  /* height: 400px; margin-bottom: -.6em; */
+}
+
+
+.heartbeat-container {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+}
+
+.heartbeat {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-color: #007AFF;
+  border-radius: 50%;
+  animation: pulse 4.1s infinite;
+  opacity: .4;
+}
+
+.heartbeat-inner {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: #007AFF;
+  border-radius: 50%;
+  animation: pulse 4s infinite;
+  top: 11px;
+  left: 11px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.6); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(0.6); }
+}
