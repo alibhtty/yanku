@@ -668,33 +668,6 @@ gtag('config', 'G-GBQG82FZQ1');
             </div>
         </a>
 
-        <!-- swipe boton instagram -->
-        <script>
-            const button = document.querySelector('.make-btn-main');
-        
-            let touchstartX = 0;
-            let touchendX = 0;
-        
-            function handleGesture() {
-                if (touchendX < touchstartX) {
-                    button.classList.add('swipe-left');
-                }
-                if (touchendX > touchstartX) {
-                    button.classList.add('swipe-right');
-                }
-            }
-            
-            button.addEventListener('touchstart', function(event) {
-                touchstartX = event.changedTouches[0].screenX;
-            }, false);
-        
-            button.addEventListener('touchend', function(event) {
-                touchendX = event.changedTouches[0].screenX;
-                handleGesture();
-            }, false);
-        </script>
-        
-
         <!-- Swipe Texto -->
         <script type='text/javascript' src='./assets/js/aos.js' id='quay-aos-script-js' data-minify="1"></script>
         <script type='text/javascript' src='./assets/js/menu.js'></script>

@@ -2674,7 +2674,7 @@ footer .social-icon a.googleplus-icon:hover {
   padding: 1.5em;
   padding-top: 0;
   text-align: center;
-  height: 8em; /* 50px */
+  height: 7em; /* 50px */
   z-index: 99;
 /*   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); */
@@ -4554,7 +4554,7 @@ iframe{
   align-items: center;
   justify-content: center;
   display: flex;
-  gap: 1.2em;
+  gap: 1em;
   cursor: pointer;
   top: 0; /* -48px */
   box-shadow: 0 0 1.5em;
@@ -4638,13 +4638,14 @@ iframe{
 .card__mensaje {
   margin-left: 0; /* 60px */
   margin-right: 0;
-  width: 78%;
+  width: 80%;
   overflow: hidden;
 }
 
 .card__mensaje h2 {
   font-family: "OakesGroteskBold";  /* colby */
-  font-size: 17px;
+  font-size: 16px;
+  text-wrap: nowrap;
   color: #f1f1f1;
   font-weight: 500;
   margin-bottom: .4em;
@@ -4655,6 +4656,7 @@ iframe{
 .card__mensaje p {
   font-family: "OakesGroteskBold"; /* colby-light */
   font-weight: 400;
+  text-wrap: nowrap;
   letter-spacing: 0px;
   width: 100%;
   font-size: 15px;
@@ -4691,24 +4693,14 @@ iframe{
 
 /* swipe boton */
 .swipe-left {
-  animation: swipeLeft 0.5s forwards;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-calc(100% - 40px));
 }
-
 .swipe-right {
-  animation: swipeRight 0.5s forwards;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(calc(100% - 40px));
 }
-
-@keyframes swipeLeft {
-  100% {
-      transform: translateX(-100%);
-      opacity: 0;
-  }
-}
-
-@keyframes swipeRight {
-  100% {
-      transform: translateX(100%);
-      opacity: 0;
-  }
+.active-blur {
+  filter: blur(3px);
 }
 /* end swipe */
