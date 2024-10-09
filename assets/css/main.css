@@ -910,10 +910,15 @@ h1 {
 }
 @media (orientation:landscape), (display-mode:standalone){
   .img-sub-nav img{
-    margin-bottom: 6em;
+    margin-bottom: 5em;
   }
   .autor{
     margin-bottom: 2em;
+  }
+}
+@media (orientation:landscape){
+  .img-sub-nav img{
+    margin-bottom: 14em;
   }
 }
 .alibhtty{
@@ -2666,7 +2671,8 @@ footer .social-icon a.googleplus-icon:hover {
   left: 0pt;
   /* background-color: #fff; */
   width: 100%;
-  padding: 1em;
+  padding: 1.5em;
+  padding-top: 0;
   text-align: center;
   height: 8em; /* 50px */
   z-index: 99;
@@ -3513,7 +3519,7 @@ footer .social-icon a.googleplus-icon:hover {
     float: left;
   }
   footer .footer-right {
-    padding: 3em 8em;
+    /* padding: 3em 8em; */
     min-height: 100%;
   }
   .menu {
@@ -4533,3 +4539,176 @@ iframe{
   z-index: 2;
 } */
 
+
+
+
+
+
+
+/* Botón Instagram */
+.carta {
+  width: 100%; /* 98% */
+  height: 6em;
+  padding: 1em;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 1.2em;
+  cursor: pointer;
+  top: 0; /* -48px */
+  box-shadow: 0 0 1.5em;
+  text-overflow: ellipsis;
+  font-family: colby-black; /* Poppins */
+}
+.carta:hover {
+  background-color: #fff;
+  transition-duration: .4s;
+  transition: 1.4s;
+}
+.card__icono {
+  margin: 0;
+  padding: .7em;
+  position: relative; /* absolute */
+  animation: Iconcolor 2.4s linear infinite alternate both;
+  /* background: #ffd900; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4em; /* 50px */
+  height: 4em;
+  border-radius: 50%;
+
+  border: solid 2px rgb(241, 241, 241,.1);
+}
+.carta {
+  /* animation: BGcolor 1.4s linear infinite alternate both; */
+  /* background: linear-gradient(to right, #833ab4,#fd1d1d,#fcb045); */
+  background: linear-gradient(145deg, #3051F1 10%, #C92BB7 60%, #fd1d1d, #fcb045 ) no-repeat;
+}
+
+/* @keyframes BGcolor {
+  0% {
+      background: #ffd900;
+  }
+
+  15% {
+      background: #ffd900;
+  }
+
+  25% {
+      background: #ffd900;
+  }
+
+  70% {
+      background: rgb(197, 161, 0);
+  }
+
+  100% {
+      background: #ebd900;
+  }
+} */
+
+/* .card_icono {
+  animation: Iconcolor 1.4s linear infinite alternate both;
+} */
+
+@keyframes Iconcolor {
+  0% {
+      background: rgba(0, 0, 0, .3); /* ffd900 */
+  }
+
+  15% {
+      background: rgba(0, 0, 0, .2);
+  }
+
+  25% {
+      background: rgba(0, 0, 0, .1);
+  }
+
+  70% {
+      background: rgba(0, 0, 0, .2);
+  }
+
+  100% {
+      background: rgba(0, 0, 0, .3);
+  }
+}
+
+.card__mensaje {
+  margin-left: 0; /* 60px */
+  margin-right: 0;
+  width: 78%;
+  overflow: hidden;
+}
+
+.card__mensaje h2 {
+  font-family: "OakesGroteskBold";  /* colby */
+  font-size: 17px;
+  color: #f1f1f1;
+  font-weight: 500;
+  margin-bottom: .4em;
+  text-align: start;
+  text-transform: none;
+}
+
+.card__mensaje p {
+  font-family: "OakesGroteskBold"; /* colby-light */
+  font-weight: 400;
+  letter-spacing: 0px;
+  width: 100%;
+  font-size: 15px;
+  text-align: start;
+  color: rgba(255, 255, 255, .6);
+  line-height: 15px;
+  text-overflow: Ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .carta {
+      width: 70%;
+  }
+
+  .card__mensaje p {
+      width: 420px;
+  }
+}
+
+@media (max-width: 400px) {
+  .carta {
+      width: 100%;
+  }
+
+  .card__mensaje p {
+      width: 246px;
+  }
+}
+
+
+
+/* swipe boton */
+.swipe-left {
+  animation: swipeLeft 0.5s forwards;
+}
+
+.swipe-right {
+  animation: swipeRight 0.5s forwards;
+}
+
+@keyframes swipeLeft {
+  100% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+}
+
+@keyframes swipeRight {
+  100% {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+}
+/* end swipe */
