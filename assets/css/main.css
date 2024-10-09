@@ -1,27 +1,48 @@
 @charset "utf-8";
 
 :root {
-  --magenta-logo:#C5945E; /* #E6037E */
+  --color-uno:#C5945E; /* #E6037E */
+  --color-uno-hover:#d6a36d;
   --magenta: #FF00FF;
-  --amarillo: #FFFF00; /* FFBB00 */
-  --azul: #0000FF;
-  --bg-light: #fff6f0; /* FFF0F8 */
+  --amarillo: #FFFF00;
+  --bg-light: #fff6f0;
   --blanco:#FFFFFF;
   --light-amarillo: #FFFFE0;
-
   --naranja: #FF7B47;
   --rojo: #FF5C5C;
+  --azul: #0000FF;
   --morado: #8838FF;
   --negro: #000000;
   --swiper-theme-color: #007AFF;
 }
 
-img{
+h1, h2, h3, h4, a, img{
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
   -user-drag: none;
   -webkit-user-drag: none;
   -moz-user-drag: none;
   -ms-user-drag: none;
 }
+body::-webkit-scrollbar {
+  width:0px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 0px solid transparent;
+}
+
+
 img.wp-smiley,
 img.emoji {
     display: inline !important;
@@ -381,6 +402,7 @@ strong {
 @media (orientation:landscape){
   .container{
     margin: 0 12em;
+    margin-top: 3em;
     padding: 0;
   }
 }
@@ -477,7 +499,7 @@ make-btn-main bottom-button read-btn mobile-make-a-reservation {
   margin: 10px 0 !important;
 }
 header.active {
-  background: var(--magenta-logo);
+  background: var(--color-uno);
   /* -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); */
   opacity: 1;
@@ -547,8 +569,8 @@ header.active .showmenu span {
   left: 0;
   width: 100vw; /* 450px */
   height: 100vh;
-  /* background: var(--magenta-logo); */
-  background: linear-gradient(to right, var(--magenta-logo), rgba(130, 97, 62, .8), rgba(130, 97, 62, 0.1), transparent);
+  /* background: var(--color-uno); */
+  background: linear-gradient(to right, var(--color-uno), rgba(130, 97, 62, .8), rgba(130, 97, 62, 0.1), transparent);
   z-index: 10;
   overflow: auto;
   -webkit-transition: all 300ms ease;
@@ -562,7 +584,7 @@ header.active .showmenu span {
   .hamburger_menu{
     width: 100%;
     background-color: rgb(197, 148, 94);
-    /* background: linear-gradient(to right, var(--magenta-logo) 80%, transparent 90%); */
+    /* background: linear-gradient(to right, var(--color-uno) 80%, transparent 90%); */
     background: rgb(197, 148, 94, .3);
     backdrop-filter: blur(40px);
   }
@@ -870,6 +892,7 @@ h1 {
 }
 .mobile_menu-nav-list-item {
   margin: 0;
+  width: max-content;
   display: block;
   color: #000;
   font-family: "colby"; /* Colby / OakesGroteskBold */
@@ -918,7 +941,7 @@ h1 {
 }
 @media (orientation:landscape){
   .img-sub-nav img{
-    margin-bottom: 14em;
+    margin-bottom: 10em;
   }
 }
 .alibhtty{
@@ -989,6 +1012,7 @@ h1 {
 }
 .link-btn a {
   width: auto;
+  border-radius: 2em;
   padding: 4px 20px;
   border: 2px solid #FFF;
   color: #FFF;
@@ -1920,14 +1944,15 @@ section.panel p a {
   display: block;
 }
 .content-details h4 {
+  width: fit-content;
   font-size: 24px;
   line-height: 28px;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
   position: relative;
-  border-bottom: solid 2px rgba(255, 255, 255, 0.5);
+  border-bottom: solid 2px rgba(255, 255, 255, .7);
 }
 @media (max-width: 767px) {
   .content-details h4 {
@@ -2934,6 +2959,10 @@ footer .social-icon a.googleplus-icon:hover {
     padding-right: 45px;
   }
 }
+.content-details .read-btn {
+  padding: 5px 30px 3px;
+  margin-top: 1em;
+}
 @media (min-width: 1024px) and (max-width: 1300px) {
   header .logo {
     display: none;
@@ -3577,7 +3606,7 @@ footer .social-icon a.googleplus-icon:hover {
     float: left;
   }
   header.active {
-    /* background-color: var(--magenta-logo); */
+    /* background-color: var(--color-uno); */
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -4220,12 +4249,12 @@ input#quantity {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0);
-  padding: 30% 8em; /* 7em 5em */
+  padding: 35% 7em; /* 7em 5em */
   transition: all .6s ease-in-out;
 }
 @media(orientation:landscape){
   .content-area .gallery-block .image1 .content_block {
-    padding: 33% 10em;
+    padding: 30% 10em;
   }
 }
 .content-area .gallery-block .image1 .content-details {
@@ -4247,12 +4276,12 @@ input#quantity {
 }
 .content-area .gallery-block .image1 .content_block:hover{
   background-color: rgba(0, 0, 0, .5);
-  backdrop-filter: blur(30px) saturate(1.3) brightness(1.1);
+  backdrop-filter: blur(30px) saturate(1.3) brightness(1.1) contrast(.7);
   transition: all .6s ease-in-out;
   transition-duration: .4s;
 }
 .content-area .gallery-block .image1 .content_block:active{
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, .7);
 }
 
 /* .content-area .gallery-block .image1 .content-details:hover{
