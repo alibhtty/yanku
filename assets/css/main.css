@@ -910,10 +910,10 @@ h1 {
 }
 @media (orientation:landscape), (display-mode:standalone){
   .img-sub-nav img{
-    margin-bottom: 5em;
+    margin-bottom: 8em;
   }
   .autor{
-    margin-bottom: 2em;
+    margin-bottom: 3em;
   }
 }
 @media (orientation:landscape){
