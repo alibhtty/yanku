@@ -4214,13 +4214,19 @@ input#quantity {
 .content-area .gallery-block .image1 .content_block {
   /* display: block; */
   position: absolute;
+  text-align: center;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0);
-  padding: 30% 5em; /* 7em 5em */
+  padding: 30% 8em; /* 7em 5em */
   transition: all .6s ease-in-out;
+}
+@media(orientation:landscape){
+  .content-area .gallery-block .image1 .content_block {
+    padding: 33% 10em;
+  }
 }
 .content-area .gallery-block .image1 .content-details {
   opacity: 1;
