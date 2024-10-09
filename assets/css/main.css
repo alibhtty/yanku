@@ -1735,9 +1735,6 @@ ul {
   /* width: 100%; */
   height: 100%;
 }
-.content_block {
-  display: none;
-}
 .image1:hover .content_block {
   display: block;
   position: absolute;
@@ -1771,9 +1768,6 @@ ul {
   float: left;
   position: relative;
 }
-.content_block {
-  display: none;
-}
 .image3:hover .content_block {
   display: block;
   position: absolute;
@@ -1788,9 +1782,6 @@ ul {
   width: 33.33%;
   float: left;
   position: relative;
-}
-.content_block {
-  display: none;
 }
 .image3:hover .content_block {
   display: block;
@@ -1807,9 +1798,6 @@ ul {
   float: left;
   position: relative;
 }
-.content_block {
-  display: none;
-}
 .image4:hover .content_block {
   display: block;
   position: absolute;
@@ -1824,9 +1812,6 @@ ul {
   width: 33.33%;
   float: left;
   position: relative;
-}
-.content_block {
-  display: none;
 }
 .image5:hover .content_block {
   display: block;
@@ -1911,6 +1896,8 @@ section.panel p a {
 .image1:hover .content_block:hover .content-details {
   left: 0%;
   opacity: 1;
+  display: block;
+  /* display: none; */
 }
 .image2:hover .content_block:hover .content-details {
   left: 0%;
@@ -2398,6 +2385,11 @@ footer .footer-left .location .opening p {
   line-height: 20px;
   letter-spacing: 1px;
 }
+@media (orientation:portrait){
+  footer .footer-left .location .opening p {
+    margin-bottom: 1em;
+  }
+}
 footer .footer-left .location .opening p strong {
   font-weight: 700;
   font-size: 14px;
@@ -2415,7 +2407,7 @@ footer .footer-left .resrvation h3 {
   font-family: "OakesGroteskBold";
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 footer .footer-left .resrvation .makebutton {
   border: 2px solid #000;
@@ -4220,21 +4212,50 @@ input#quantity {
   filter: none;
 }
 .content-area .gallery-block .image1 .content_block {
-  display: block;
+  /* display: block; */
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 7em 3em; /* 115px */
+  background: rgba(0, 0, 0, 0);
+  padding: 30% 5em; /* 7em 5em */
+  transition: all .6s ease-in-out;
 }
 .content-area .gallery-block .image1 .content-details {
   opacity: 1;
+  transition: all .6s ease-in-out;
+  transition-duration: .4s;
 }
+@media(orientation:portrait){
+  .content-area .gallery-block .image1 .content-details {
+    opacity: 1;
+    transition: all .6s ease-in-out;
+    transition-duration: .4s;
+    display: none;
+  }
+}
+
 .content-area .block1 .block1-left .read-btn:hover {
   color: #fff !important;
 }
+.content-area .gallery-block .image1 .content_block:hover{
+  background-color: rgba(0, 0, 0, .5);
+  backdrop-filter: blur(30px) saturate(1.3) brightness(1.1);
+  transition: all .6s ease-in-out;
+  transition-duration: .4s;
+}
+.content-area .gallery-block .image1 .content_block:active{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* .content-area .gallery-block .image1 .content-details:hover{
+  display: none;
+}
+.content-area .gallery-block .image1 .content-details:active{
+  display: none;
+} */
+
 .home header {
   position: absolute;
   height: 5.5em;
