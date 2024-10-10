@@ -186,7 +186,7 @@ body {
   font-size: 13px;
   font-weight: 400;
   line-height: 22px;
-  background-color: #000;  /* #e1e1e1 */
+  background-color: var(--color-uno); /* #000 */
   font-family: "OakesGroteskRegular" !important;
   -webkit-text-size-adjust: none;
 }
@@ -2258,7 +2258,7 @@ p.quote-author {
   transform: translate(-50%, -50%);
 }
 .footer-block {
-  background: #d5dddb;
+  background: var(--bg-light);
 }
 .footer-block .club-block {
   width: 100%;
@@ -3747,7 +3747,8 @@ footer .social-icon a.googleplus-icon:hover {
     margin-bottom: 20px;
   }
   .content-details h4 {
-    margin-bottom: 20px;
+    margin-bottom: 2em;
+    padding-top: 30%;
   }
   .content-area .latest-block .latest-left {
     -webkit-transform: none;
@@ -3799,7 +3800,8 @@ footer .social-icon a.googleplus-icon:hover {
     line-height: 35px;
   }
   .image1:hover .content_block {
-    padding: 65px 20px;
+    /* padding: 65px 20px; */
+    padding: 0 20%;
   }
   .readmore-box {
     min-height: 120px !important;
@@ -4249,14 +4251,23 @@ input#quantity {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0);
-  padding: 35% 7em; /* 7em 5em */
+  /* padding: 35% 7em; */
   transition: all .6s ease-in-out;
 }
 @media(orientation:landscape){
-  .content-area .gallery-block .image1 .content_block {
+  /* .content-area .gallery-block .image1 .content_block {
     padding: 30% 10em;
+  } */
+  .image1:hover .content_block {
+    /* padding: 65px 20px; */
+    padding: 0 20%;
   }
 }
+/* @media(orientation:portrait){
+  .content-area .gallery-block .image1 .content_block {
+    padding: 30% 9em;
+  }
+} */
 .content-area .gallery-block .image1 .content-details {
   opacity: 1;
   transition: all .6s ease-in-out;
@@ -4279,6 +4290,10 @@ input#quantity {
   backdrop-filter: blur(30px) saturate(1.3) brightness(1.1) contrast(.7);
   transition: all .6s ease-in-out;
   transition-duration: .4s;
+
+  justify-content: center;
+    align-items: center;
+    display: flex;
 }
 .content-area .gallery-block .image1 .content_block:active{
   background-color: rgba(0, 0, 0, .7);

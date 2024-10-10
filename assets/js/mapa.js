@@ -7,7 +7,8 @@
 /* global google */
 /* global nectarLove */
 
-var nectarLove = { "ajaxurl": "https:\/\/colonialbuffet.es\/wp-admin\/admin-ajax.php", "postID": "909", "rooturl": "https:\/\/colonialbuffet.es", "disqusComments": "false", "loveNonce": "5b9f5550ec", "mapApiKey": "AIzaSyC8wNPazpWR1FwmO_OnQNuGIuu9PPJ22mY" };
+var nectarLove = {"mapApiKey": "AIzaSyC8wNPazpWR1FwmO_OnQNuGIuu9PPJ22mY" };
+//"ajaxurl": "https:\/\/colonialbuffet.es\/wp-admin\/admin-ajax.php", "postID": "909", "rooturl": "https:\/\/colonialbuffet.es", "disqusComments": "false", "loveNonce": "5b9f5550ec", 
 
 
 
@@ -727,15 +728,9 @@ Object.keys = Object.keys || function(o) {
                 
               })(marker, i));
             }
-            
-            
           });
-          
-        });
-        
-        
-      }//setMarker
-      
+        }); 
+      }      
   });
     
 })(jQuery);  
