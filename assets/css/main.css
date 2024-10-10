@@ -2479,7 +2479,7 @@ footer .footer-right {
   display: block;
   padding: 8em;
   height: 29em;
-  padding-top: 4em;
+  /* padding-top: 4em; */
   /* padding: 70px 50px 35px 50px; */
 }
 footer .footer-right h2 {
