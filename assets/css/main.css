@@ -330,8 +330,7 @@ a {
   text-decoration: none !important;
 }
 a:hover {
-  /* color: #000000 !important; */
-  color: #f1f1f1 !important;
+  color: #000000 !important;
   text-decoration: none !important;
 }
 ul {
@@ -2537,14 +2536,24 @@ footer .copy-block {
   color: #f1f1f1;
 }
 .alibhtty{
+  display: contents;
   font-size: 10px;
   transition: .5s all ease-in-out;
 }
-.copy-block a{
+.alibhtty-led{
+  transition: all .4s ease-in-out;
+  transition-duration: .6s;
   display: contents;
   font-size: 13px;
   letter-spacing: normal;
   color: #adff0a;
+  font-weight: 600;
+}
+.alibhtty-led:hover{
+  display: contents;
+  font-size: 13px;
+  letter-spacing: normal;
+  color: #dcff95 !important;
   font-weight: 600;
 }
 
