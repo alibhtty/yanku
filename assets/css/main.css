@@ -330,7 +330,8 @@ a {
   text-decoration: none !important;
 }
 a:hover {
-  color: #000000 !important;
+  /* color: #000000 !important; */
+  color: #f1f1f1 !important;
   text-decoration: none !important;
 }
 ul {
@@ -943,9 +944,6 @@ h1 {
   .img-sub-nav img{
     margin-bottom: 10em;
   }
-}
-.alibhtty{
-  transition: .5s all ease-in-out;
 }
 .mobile_menu-nav-list-item:first-child .mobile_menu-nav-link {
   padding-top: 0;
@@ -2512,6 +2510,8 @@ footer .footer-right ul li a {
   font-family: "OakesGroteskRegular", Arial, Helvetica, sans-serif;
 }
 footer .copy-block {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   background-color: #1a1a1a;
   color: #fff;
@@ -2521,6 +2521,33 @@ footer .copy-block {
   text-transform: uppercase;
   letter-spacing: 4px;
 }
+.derechos{
+  /* font-size: 20px; */
+  margin: 0 3em;
+  color: #f1f1f1;
+}
+.content-alibhtty{
+  display: flex;
+  align-items: center;
+  margin: 0 5em;
+  justify-content: center;
+}
+.disenado-por{
+  margin: 0;
+  color: #f1f1f1;
+}
+.alibhtty{
+  font-size: 10px;
+  transition: .5s all ease-in-out;
+}
+.copy-block a{
+  display: contents;
+  font-size: 13px;
+  letter-spacing: normal;
+  color: #adff0a;
+  font-weight: 600;
+}
+
 footer .social-icon a {
   background: url("../icons/social-icons.png")
     no-repeat 0 0;
@@ -2686,15 +2713,12 @@ footer .social-icon a.googleplus-icon:hover {
   position: fixed;
   bottom: 0pt;
   left: 0pt;
-  /* background-color: #fff; */
   width: 100%;
   padding: 1.5em;
   padding-top: 0;
   text-align: center;
-  height: 7.5em; /* 50px */
+  height: 7.5em;
   z-index: 99;
-/*   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); */
 }
 .make-btn {
   width: auto;
@@ -3362,7 +3386,14 @@ footer .social-icon a.googleplus-icon:hover {
     display: block;
   }
   footer .copy-block {
+    display: block;
     padding: 25px 18px;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .alibhtty{
+    margin: 0;
+    font-size: 10px;
   }
   .blog .content-area .block1 .block1-left {
     top: 0;
@@ -4569,22 +4600,12 @@ b{
     font-size: 11px;
 }
 
-.copy-block a{
-  color: #adff0a;
-  font-weight: 600;
-}
-.alibhtty:hover{
-  color: #f1f1f1;
-}
-
 
 
 
 /* menu lateral */
 .no-scroll {
   overflow: hidden;
-  /* position: fixed;
-  overflow-x: none; */
 }
 .blur-background {
   position: fixed;
@@ -4592,24 +4613,15 @@ b{
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: rgba(0, 0, 0, 1); */
-  /* background-color: rgb(197, 148, 94,.3); */
   background-color: rgba(25, 19, 12, .7);
   backdrop-filter: blur(80px);
   -webkit-backdrop-filter: blur(80px);
   z-index: 1;
 }
 iframe{
-  background-color: #C5945E;
+  background-color: var(--color-uno);
   margin-bottom: -10px;
 }
-
-/* .menuSeven {
-  position: fixed;
-  width: 450px;
-  height: 100%;
-  z-index: 2;
-} */
 
 
 
@@ -4653,10 +4665,18 @@ iframe{
 
   border: solid 2px rgb(241, 241, 241,.1);
 }
+
 .carta {
-  /* animation: BGcolor 1.4s linear infinite alternate both; */
-  /* background: linear-gradient(to right, #833ab4,#fd1d1d,#fcb045); */
-  background: linear-gradient(145deg, #3051F1 10%, #C92BB7 60%, #fd1d1d, #fcb045 ) no-repeat;
+  background: linear-gradient(145deg, #3051F1 10%, #C92BB7 50%, #fd1d1d, #fcb045) no-repeat;
+  background-size: 200% 200%;
+  animation: gradientShift 10s ease infinite;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* @keyframes BGcolor {
@@ -4763,7 +4783,7 @@ iframe{
 
 
 
-/* swipe boton */
+/* Botón Instagram (Swipe)*/
 .swipe-left {
   transition: transform 0.5s ease-in-out;
   transform: translateX(-calc(100% - 40px));
@@ -4773,7 +4793,7 @@ iframe{
   transform: translateX(calc(100% - 40px));
 }
 .active-blur {
-  filter: blur(3px);
+  filter: blur(0) brightness(1.3);
 }
 /* end swipe */
 

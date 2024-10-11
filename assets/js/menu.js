@@ -31,7 +31,7 @@ $ = jQuery;
         });
     });
 
-    /// ANIMATED MENU ICON ///
+    /// Menú Lateral ///
     const menuSeven = document.querySelector('.menuSeven');
 
     function addClassFunSeven() {
@@ -42,22 +42,27 @@ $ = jQuery;
 
 
 
-// Swipe botón Instagram
+    // Swipe botón Instagram
     const button = document.querySelector('.make-btn-main');
     let startX = 0;
     let currentX = 0;
-
+    
     button.addEventListener('touchstart', function(event) {
+        event.preventDefault();
         startX = event.touches[0].clientX;
         button.classList.remove('swipe-out');
         button.querySelector('.carta').classList.add('active-blur');
+    
+        // Desactivar scroll en el body
+        document.body.style.overflow = 'hidden';
     });
-
+    
     button.addEventListener('touchmove', function(event) {
+        event.preventDefault();
         currentX = event.touches[0].clientX - startX;
         button.style.transform = `translateX(${currentX}px)`;
     });
-
+    
     button.addEventListener('touchend', function() {
         button.querySelector('.carta').classList.remove('active-blur');
         if (Math.abs(currentX) > button.offsetWidth / 2) {
@@ -66,4 +71,7 @@ $ = jQuery;
         } else {
             button.style.transform = 'translateX(0)';
         }
+    
+        // Reactivar scroll en el body
+        document.body.style.overflow = 'auto';
     });
