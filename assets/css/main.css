@@ -2521,6 +2521,14 @@ footer .copy-block {
   text-transform: uppercase;
   letter-spacing: 4px;
 }
+@media (max-width:1080px){
+  header.active .right-side {
+    display: none;
+  }
+  footer .copy-block {
+    display: block;
+  }
+}
 .derechos{
   cursor:default;
   margin: 0 3em;
