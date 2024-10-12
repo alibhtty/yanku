@@ -4819,7 +4819,10 @@ iframe{
   transform: translateX(calc(100% - 40px));
 }
 .active-blur {
-  filter: blur(0) brightness(1.3);
+  filter: brightness(1.7) hue-rotate(-55deg);
+  scale: 1.03;
+  animation-duration: 4s;
+  transition-duration: .4s;
 }
 /* end swipe */
 
