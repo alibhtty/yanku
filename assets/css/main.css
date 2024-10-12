@@ -914,12 +914,13 @@ h1 {
   display: flex;
   max-height: 12em;
   width: auto;
-  /* margin: 1em; */
-  /* margin-bottom: 20vh; */
 }
 .autor{
-  font-family: "Poppins";
-  font-size: 12px;
+  /* font-family: Verdana; */
+  font-family: "OakesGroteskRegular" !important;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
   font-weight: 400;
   color: rgb(241, 241, 241,.6);
   margin-bottom: 2em;
@@ -2543,6 +2544,7 @@ footer .copy-block {
 .disenado-por{
   text-transform: none;
   margin: 0;
+  margin-right: -3px;
   color: #f1f1f1;
 }
 .alibhtty{
@@ -4442,6 +4444,7 @@ a.experienceVoucherButton:hover {
   }
   .home header .hamburger_menu_content {
     padding-top: 12vh; /* 70px */
+    overflow-x: hidden;
   }
 }
 @media (min-width: 500px) {
