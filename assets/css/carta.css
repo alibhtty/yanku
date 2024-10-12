@@ -96,7 +96,7 @@ ul li{
     background: #fff; /* fff */
     color:var(--color-uno);
     text-align: center;
-    font-weight: 700;
+    /* font-weight: 700; */
     border: none;
     text-transform: uppercase;
     letter-spacing: normal;
