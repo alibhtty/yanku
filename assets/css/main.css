@@ -2541,6 +2541,7 @@ footer .copy-block {
   justify-content: center;
 }
 .disenado-por{
+  text-transform: none;
   margin: 0;
   color: #f1f1f1;
 }
@@ -4520,7 +4521,11 @@ a.menubtn {
 }
 
 
-html, body {overflow-x: hidden;}
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  box-sizing: content-box;
+}
 
 
 
