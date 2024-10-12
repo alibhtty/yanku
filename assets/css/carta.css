@@ -14,7 +14,7 @@
 
 ul li{
     line-height: 1em; /* 13px */
-    font-size: 1.1em;
+    font-size: 1.05em;
     text-transform: uppercase;
     font-family: colby; /* "OakesGroteskBold" */
     font-weight: 400;
@@ -103,7 +103,7 @@ ul li{
 }
 .nav-link {
     color: #FFF;
-    padding: 1em 1em  .7em 1em;
+    padding: 1em .8em  .7em .8em;
     min-width: 8.5vw;
     margin: 0;
 }
@@ -171,7 +171,7 @@ clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 }
 
 .top-names {
-    height: 3.6em; /* 3.5em */
+    height: 3.5em; /* 3.5em */
     gap: .5em;
     display: flex;
     align-items: center;
@@ -292,7 +292,7 @@ clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
         margin: 0;
     }
     .nombre{
-        font-size: 19px;
+        font-size: 18px;
         letter-spacing: normal;
     }
     .low-content {
