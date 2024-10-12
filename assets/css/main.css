@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 :root {
-  --color-uno:#C5945E; /* #E6037E */
+  --color-uno:#C5945E; /*  #C5945E    #E6037E */
   --color-uno-hover:#d6a36d;
   --magenta: #FF00FF;
   --amarillo: #FFFF00;
@@ -2716,6 +2716,8 @@ footer .social-icon a.googleplus-icon:hover {
   margin-bottom: 20px;
 }
 .make-btn-main {
+  width: 100%;
+  height: 7.3em;
   background-image: none;
   background-repeat: repeat;
   background-attachment: scroll;
@@ -2723,11 +2725,9 @@ footer .social-icon a.googleplus-icon:hover {
   position: fixed;
   bottom: 0pt;
   left: 0pt;
-  width: 100%;
   padding: 1.5em;
   padding-top: 0;
   text-align: center;
-  height: 7.5em;
   z-index: 99;
 }
 .make-btn {
@@ -4576,8 +4576,8 @@ p, address, h1, h2, h3 {
 @media (orientation: portrait){
   .colaboradores-logo{
     width: 100%;
-    gap: 2em;
-    margin-bottom: 4em;
+    gap: 1.5em;
+    margin-bottom: 3em;
   }
   .colaboraitem img{
     min-width: 100px;
@@ -4645,7 +4645,7 @@ iframe{
 /* Botón Instagram */
 .carta {
   width: 100%; /* 98% */
-  height: 6em;
+  height: 5.7em;
   padding: 1em;
   border-radius: 20px;
   align-items: center;
