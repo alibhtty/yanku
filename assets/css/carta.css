@@ -1,6 +1,22 @@
 /* BOOTSTRAP RESET */
 *, *::before, *::after {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media screen and (orientation: portrait){
+    body{
+        overscroll-behavior: contain;
+        overscroll-behavior-x: contain;
+        overscroll-behavior-y: none;
+    }
+}
+@media screen and (display-mode: standalone){
+    body{
+        overscroll-behavior: contain;
+        overscroll-behavior-x: contain;
+        overscroll-behavior-y: none;
+    }
 }
 
 @font-face {
@@ -134,12 +150,12 @@ ul li{
     overflow: hidden;
     border-radius: 1em;
     margin-bottom: 1.5em;
-    transition: all .3s ease-in-out;
+    transition: all .45s ease-in-out;
 }
 @media (orientation:portrait){
     .box:active{
-        scale: 1.03;
-        transition-duration: .4s;
+        scale: 1.02;
+        transition-duration: .35s;
     }
 }
 
