@@ -13,7 +13,7 @@ const menuItems = {
         nombre: 'Nachos con Guacamole',
         descripcion: 'Crujientes totopos de maíz con frijoles negros, queso fundido y guacamole por encima.',
         precio: '12.00€',
-        alergenos: ["gluten", "lacteos"]
+        alergenos: ["gluten", "lacteos"],
       },
       {
         img: '../assets/img/carta/guacamole.png',
@@ -191,7 +191,8 @@ const menuItems = {
         nombre: 'Estela Artois',
         descripcion: 'Fría y directa del barril.',
         precio: '2.50€',
-        alergenos: ["alcohol"]
+        alergenos: ["alcohol"],
+        especial: true
       },
       {
         img: '../assets/img/carta/corona.png',
