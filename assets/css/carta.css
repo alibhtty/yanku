@@ -12,6 +12,15 @@
     src: url(../fonts/Colby-StLt.ttf);
 }
 
+.fade {
+    opacity: 1;
+    transition: opacity 0s ease-in-out;
+    transition-duration: .5s;
+  }
+.fade-out {
+    opacity: 0;
+  }
+  
 ul li{
     line-height: 1em; /* 13px */
     font-size: 1.05em;
@@ -143,6 +152,10 @@ ul li{
     -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 
+}
+.food-img{
+    width: 10em;
+    height: auto;
 }
 .single_menu img {
     width: 10em;   /* 33% */
