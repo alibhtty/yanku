@@ -132,10 +132,15 @@ ul li{
 .box {
     background-color: var(--bg-light);
     overflow: hidden;
-   /*  padding: 3px; */
-    /* overflow: hidden; */
     border-radius: 1em;
     margin-bottom: 1.5em;
+    transition: all .3s ease-in-out;
+}
+@media (orientation:portrait){
+    .box:active{
+        scale: 1.03;
+        transition-duration: .4s;
+    }
 }
 
 .single_menu {
