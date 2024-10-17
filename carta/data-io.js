@@ -10,48 +10,27 @@ const menuItems = {
     entrantes: [
       {
         img: '../assets/img/carta/nachos.png',
-        nombre: 'Wantan Frito',
+        nombre: 'Nachos con Guacamole',
         descripcion: 'Crujientes totopos de maíz con frijoles negros, queso fundido y guacamole por encima.',
         precio: '12.00€',
         alergenos: ["gluten", "lacteos"],
       },
       {
         img: '../assets/img/carta/guacamole.png',
-        nombre: 'Rollitos de Primavera',
+        nombre: 'Guacamole',
         descripcion: 'Crujientes totopos de maíz con frijoles negros, queso fundido y guacamole por encima.',
         precio: '8.00€',
       },
       {
         img: '../assets/img/carta/sincronizada.png',
-        nombre: 'Nabo incurtido',
+        nombre: 'Sincronizada',
         descripcion: 'Tortillas de trigo con jamón York, queso fundido y pico de gallo.',
         precio: '12.00€',
         alergenos: ["lacteos"]
       },
       {
         img: '../assets/img/carta/ensalada-de-nopales.png',
-        nombre: 'Empanaditas Chinas',
-        descripcion: 'Nopalitos frescos con cebolla, jitomate, cilantro, queso fresco y aceite de oliva.',
-        precio: '8.00€',
-        alergenos: ["lacteos"]
-      },
-      {
-        img: '../assets/img/carta/sincronizada.png',
-        nombre: 'Sopa Wantan',
-        descripcion: 'Tortillas de trigo con jamón York, queso fundido y pico de gallo.',
-        precio: '12.00€',
-        alergenos: ["lacteos"]
-      },
-      {
-        img: '../assets/img/carta/ensalada-de-nopales.png',
-        nombre: 'Caldo con Verduras',
-        descripcion: 'Nopalitos frescos con cebolla, jitomate, cilantro, queso fresco y aceite de oliva.',
-        precio: '8.00€',
-        alergenos: ["lacteos"]
-      },
-      {
-        img: '../assets/img/carta/ensalada-de-nopales.png',
-        nombre: 'Caldo con Kion',
+        nombre: 'Ensalada de Nopales',
         descripcion: 'Nopalitos frescos con cebolla, jitomate, cilantro, queso fresco y aceite de oliva.',
         precio: '8.00€',
         alergenos: ["lacteos"]
@@ -371,7 +350,7 @@ const menuItems = {
         precio: '2.50€',
       }      
     ],
-    menu: [
+    cocteles: [
       {
         img: '../assets/img/carta/margarita.png',
         nombre: 'Margarita Frozen',

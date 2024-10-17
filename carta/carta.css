@@ -83,7 +83,7 @@ ul li{
 }
 .tab-content{
     display: flex;
-    gap: 1.5em;
+    gap: 1em 1.5em;
     flex-wrap: wrap;
 }
 
@@ -92,6 +92,7 @@ ul li{
 
 /* LA CARTA CSS */
 #our_menu{
+    min-height: 42vh;
      /* background-color: #ffc934; */
      /* background: var(--color-uno); background: -moz-linear-gradient(to bottom,  #E6037E 0%,#FFFFE0 100%); background: -webkit-linear-gradient(to bottom,  #E6037E 0%,#FFFFE0 100%); background: linear-gradient(to bottom,  #E6037E 0%,#FFFFE0 100%); */
      background: var(--color-uno); background: -moz-linear-gradient(to bottom, var(--color-uno) 0%,#FFFFE0 100%); background: -webkit-linear-gradient(to bottom, var(--color-uno) 0%,#FFFFE0 100%); background: linear-gradient(to bottom,  var(--color-uno) 0%,#FFFFE0 100%);
@@ -340,13 +341,13 @@ clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 
 .selectores{
     justify-content: center;
-    margin-top: 1.5em;
+    padding-top: 2em;
 }
 .contenedor{
     width: calc(100% - 4em);
 }
 .nav{
-    width: calc(100% - 4em);
+    width: calc(100% - 24em);
 }
 
 

@@ -90,6 +90,12 @@ function generarMenu(categoria) {
     }, 400); // Tiempo de espera para el fade-out antes de cambiar el contenido
 }
 
+// Evento para cargar la categoría seleccionada
+function cargarCategoriaInicial() {
+    const categoriaGuardada = localStorage.getItem('categoriaSeleccionada');
+    return categoriaGuardada ? categoriaGuardada : Object.keys(menuItems)[0]; // Cargar la primera categoría si no hay guardada
+}
+
 // Función para cambiar la categoría activa
 function cambiarCategoria(categoria) {
     localStorage.setItem('categoriaSeleccionada', categoria); // Guardar la categoría seleccionada
@@ -112,14 +118,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Cargar la categoría inicial
     const categoriaInicial = cargarCategoriaInicial();
-    cambiarCategoria(categoriaInicial); // Asegura que se llame para activar una categoría
+    cambiarCategoria(categoriaInicial);
 
-    // Añadir evento a los tabs (esto se hace dentro de generarSelectores ahora)
+    // Añadir evento a los tabs
+    document.querySelectorAll('.nav-link').forEach(tab => {
+        tab.addEventListener('click', (e) => {
+            e.preventDefault(); // Evitar comportamiento por defecto de los enlaces
+            const categoria = e.target.getAttribute('data-categoria');
+            cambiarCategoria(categoria);
+        });
+    });
 });
-
-// Función para cargar la categoría seleccionada
-function cargarCategoriaInicial() {
-    // Aquí puedes seleccionar manualmente una categoría para que esté activa al cargar la página
-    // En este caso, simplemente seleccionamos la primera categoría
-    return Object.keys(menuItems)[0]; 
-}
