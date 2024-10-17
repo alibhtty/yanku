@@ -341,7 +341,7 @@ clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 
 .selectores{
     justify-content: center;
-    padding-top: 2em;
+    /* padding-top: 2em; */
 }
 .contenedor{
     width: calc(100% - 4em);

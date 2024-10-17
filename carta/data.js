@@ -7,7 +7,7 @@ const alergenosIcons = {
   };
   
 const menuItems = {
-    entrantes: [
+    entrandas: [
       {
         img: '../assets/img/carta/nachos.png',
         nombre: 'Wantan Frito',
