@@ -21,32 +21,21 @@
 
 @font-face {
     font-family: "colby";
-    src: url(../assets/fonts/Colby-StBld.ttf);
+    src: url(../fonts/Colby-StBld.ttf);
 }
 @font-face {
     font-family: "colby-light";
-    src: url(../assets/fonts/Colby-StLt.ttf);
+    src: url(../fonts/Colby-StLt.ttf);
 }
 
-/* .fade-in {
+.fade {
     opacity: 1;
     transition: opacity 0s ease-in-out;
     transition-duration: .5s;
   }
 .fade-out {
     opacity: 0;
-  } */
-
-  .fade-out {
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-}
-
-.fade-in {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-    transition-duration: .8s;
-}
+  }
   
 ul li{
     line-height: 1em; /* 13px */
@@ -57,20 +46,9 @@ ul li{
     padding-bottom: .5em;
 }
 
-/* .col-md-6{
+.col-md-6{
     padding-right: 1.5em;
     padding-left: 1.5em;
-} */
-@media (orientation:portrait){
-    .col-md-6{
-        width: 100%;
-    }
-}
-@media (orientation:landscape){
-    .col-md-6{
-        width: calc(50% - 1em);
-        gap: 1em;
-    }
 }
 
 /* LINEA SUB NAV */
@@ -80,11 +58,6 @@ ul li{
 
 .nav-tabs .nav-link {
     border: none;
-}
-.tab-content{
-    display: flex;
-    gap: 1.5em;
-    flex-wrap: wrap;
 }
 
 
@@ -170,13 +143,13 @@ ul li{
 }
 
 .nav-link:hover {
-    background: rgb(250, 250, 250, .9); /* .6 */
+    background: rgb(250, 250, 250, .6);
 }
 .box {
     background-color: var(--bg-light);
     overflow: hidden;
     border-radius: 1em;
-    /* margin-bottom: 1.5em; */
+    margin-bottom: 1.5em;
     transition: all .45s ease-in-out;
     box-shadow: inset 0 0 0 1px rgba(20,20,20,.2);
 }
@@ -374,7 +347,7 @@ clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
     }
     .low-content p{
         margin: 0;
-        padding: .2em 0;
+        padding: .3em 0;
         width: auto;
         /* height: inherit; */
         /* min-width: calc(40% - .5em); */

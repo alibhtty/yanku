@@ -36,46 +36,7 @@ const menuItems = {
         alergenos: ["lacteos"]
       },
     ],
-    segundos: [
-      {
-        img: '../assets/img/carta/taco-de-tinga-de-pollo.png',
-        nombre: 'Segundo de Pollo',
-        descripcion: 'Pechuga de pollo desmenuzada en salsa de casa.',
-        precio: '2.50€',
-      },
-      {
-        img: '../assets/img/carta/taco-de-cochinita-pibil.png',
-        nombre: 'Taco de Cochinita Pibil',
-        descripcion: 'Carne de cerdo en salsa pibil con cebolla morada encurtida en limón por encima.',
-        precio: '2.50€',
-      },
-      {
-        img: '../assets/img/carta/taco-al-pastor.png',
-        nombre: 'Taco al Pastor',
-        descripcion: 'Cerdo adobado en salsa pastor, a la plancha y servido con cebollita, cilantro y limón.',
-        precio: '2.50€',
-      },
-      {
-        img: '../assets/img/carta/taco-de-mole-verde.png',
-        nombre: 'Taco de Mole Verde',
-        descripcion: 'Pechuga de pollo desmenuzada en una salsa prehispánica de hierbas mexicanas.',
-        precio: '2.50€',
-        alergenos: ["lacteos"]
-      },
-      {
-        img: '../assets/img/carta/taco-de-carne.png',
-        nombre: 'Taco de Carne',
-        descripcion: 'Ternera desmenuzada en salsa de jitomate y cebolla.',
-        precio: '2.50€',
-      },
-      {
-        img: '../assets/img/carta/taco-de-papa-con-chorizo.png',
-        nombre: 'Taco de Papa con Chorizo',
-        descripcion: 'Patata con chorizo.',
-        precio: '2.50€',
-      },
-    ],
-    "caldos y sopas": [
+    platos: [
       {
         img: '../assets/img/carta/taco-de-tinga-de-pollo.png',
         nombre: 'Tinga de Pollo',
@@ -114,7 +75,7 @@ const menuItems = {
         precio: '2.50€',
       },
     ],
-    pescados: [
+    menu: [
         {
           img: '../assets/img/carta/tacos-dorados.png',
           nombre: 'Tacos Dorados',
@@ -150,103 +111,6 @@ const menuItems = {
           precio: '10.00€',
           alergenos: ["lacteos"]
         },
-    ],
-    "arroz chaufa": [
-      {
-        img: '../assets/img/carta/tacos-dorados.png',
-        nombre: 'Tacos Dorados',
-        descripcion: 'Pollo o ternera envuelta en crujientes tortillas de maíz con lechuga, cebolla, jitomate, crema agria y queso fresco por encima.',
-        precio: '10.00€',
-        alergenos: ["lacteos"]
-      },
-      {
-        img: '../assets/img/carta/enchiladas-verdes.png',
-        nombre: 'Enchiladas Verdes',
-        descripcion: 'Pechuga de pollo envuelta en tortillas de maíz y bañadas con salsa verde asada y con cebolla, queso fresco y crema agria.',
-        precio: '10.00€',
-        alergenos: ["lacteos"]
-      },
-      {
-        img: '../assets/img/carta/choriqueso.png',
-        nombre: 'Choriqueso',
-        descripcion: 'Cerdo adobado en salsa pastor, a la plancha y servido con cebollita, cilantro y limón.',
-        precio: '10.00€',
-        alergenos: ["lacteos"]
-      },
-      {
-        img: '../assets/img/carta/champiqueso.png',
-        nombre: 'Champiqueso',
-        descripcion: 'Champiñones, cebolla y queso fundido a la plancha y acompañado con cuatro tortillasde trigo.',
-        precio: '10.00€',
-        alergenos: ["lacteos"]
-      },
-      {
-        img: '../assets/img/carta/alambre.png',
-        nombre: 'Alambre',
-        descripcion: 'Ternera o pollo, pimiento verde y rojo, cebolla y queso fundido.',
-        precio: '10.00€',
-        alergenos: ["lacteos"]
-      },
-    ],
-    "platos especiales": [
-    {
-      img: '../assets/img/carta/tacos-dorados.png',
-      nombre: 'Tacos Dorados',
-      descripcion: 'Pollo o ternera envuelta en crujientes tortillas de maíz con lechuga, cebolla, jitomate, crema agria y queso fresco por encima.',
-      precio: '10.00€',
-      alergenos: ["lacteos"]
-    },
-    {
-      img: '../assets/img/carta/enchiladas-verdes.png',
-      nombre: 'Enchiladas Verdes',
-      descripcion: 'Pechuga de pollo envuelta en tortillas de maíz y bañadas con salsa verde asada y con cebolla, queso fresco y crema agria.',
-      precio: '10.00€',
-      alergenos: ["lacteos"]
-    },
-    {
-      img: '../assets/img/carta/choriqueso.png',
-      nombre: 'Choriqueso',
-      descripcion: 'Cerdo adobado en salsa pastor, a la plancha y servido con cebollita, cilantro y limón.',
-      precio: '10.00€',
-      alergenos: ["lacteos"]
-    },
-    {
-      img: '../assets/img/carta/champiqueso.png',
-      nombre: 'Champiqueso',
-      descripcion: 'Champiñones, cebolla y queso fundido a la plancha y acompañado con cuatro tortillasde trigo.',
-      precio: '10.00€',
-      alergenos: ["lacteos"]
-    },
-    {
-      img: '../assets/img/carta/alambre.png',
-      nombre: 'Alambre',
-      descripcion: 'Ternera o pollo, pimiento verde y rojo, cebolla y queso fundido.',
-      precio: '10.00€',
-      alergenos: ["lacteos"]
-    },
-    ],
-    tortillas: [
-      {
-        img: '../assets/img/carta/tres-leches.png',
-        nombre: 'Tartita Tres Leches',
-        descripcion: 'Bañada con tres leches.',
-        precio: '4.00€',
-        alergenos: ["huevo", "lacteos"]
-      },
-      {
-        img: '../assets/img/carta/chocoflan.png',
-        nombre: 'Chocoflán',
-        descripcion: 'Esponjoso y cremoso.',
-        precio: '4.00€',
-        alergenos: ["huevo", "lacteos"]
-      },
-      {
-        img: '../assets/img/carta/chocoflan.png',
-        nombre: 'Borrachito Catalán',
-        descripcion: 'Bizcocho bañado en almíbar, brandy y relleno de crema catalana.',
-        precio: '4.00€',
-        alergenos: ["huevo", "lacteos"]
-      },
     ],
     postres: [
       {
@@ -321,7 +185,7 @@ const menuItems = {
         precio: '3.00€',
       },
     ],
-    tallarines: [
+    cervezas: [
       {
         img: '../assets/img/carta/stela-artois.png',
         nombre: 'Estela Artois',
@@ -387,7 +251,7 @@ const menuItems = {
         alergenos: ["alcohol"]
       },
     ],
-    combinados: [
+    vinos: [
       {
         img: '../assets/img/carta/vino-la-bestia-blanca.png',
         nombre: 'La Bestia Blanca',
@@ -437,28 +301,5 @@ const menuItems = {
         precio: '8.00€',
         alergenos: ["alcohol"]
       }
-    ],
-    "A la plancha": [
-      {
-        img: '../assets/img/carta/tres-leches.png',
-        nombre: 'Tartita Tres Leches',
-        descripcion: 'Bañada con tres leches.',
-        precio: '4.00€',
-        alergenos: ["huevo", "lacteos"]
-      },
-      {
-        img: '../assets/img/carta/chocoflan.png',
-        nombre: 'Chocoflán',
-        descripcion: 'Esponjoso y cremoso.',
-        precio: '4.00€',
-        alergenos: ["huevo", "lacteos"]
-      },
-      {
-        img: '../assets/img/carta/chocoflan.png',
-        nombre: 'Borrachito Catalán',
-        descripcion: 'Bizcocho bañado en almíbar, brandy y relleno de crema catalana.',
-        precio: '4.00€',
-        alergenos: ["huevo", "lacteos"]
-      },
     ],
   };
