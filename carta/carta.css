@@ -235,6 +235,10 @@ clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
         position: relative;
         margin: .4em 0;
     }
+    .selectores{
+        margin-top: 2.5em;
+        margin-bottom: 1em;
+    }
 }
 
 .top-names {
