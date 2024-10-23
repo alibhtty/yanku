@@ -7,7 +7,7 @@ const alergenosIcons = {
   };
   
 const menuItems = {
-    entrandas: [
+    entradas: [
       {
         img: '../assets/img/carta/nachos.png',
         nombre: 'Wantan Frito',
@@ -459,7 +459,7 @@ const menuItems = {
         alergenos: ["alcohol"]
       }
     ],
-    "A la plancha": [
+    "a la plancha": [
       {
         img: '../assets/img/carta/tres-leches.png',
         nombre: 'Tartita Tres Leches',

@@ -4666,7 +4666,7 @@ iframe{
   width: 100%; /* 98% */
   height: 5.7em;
   padding: 1em;
-  border-radius: 20px;
+  border-radius: 1.2em;
   align-items: center;
   justify-content: center;
   display: flex;
